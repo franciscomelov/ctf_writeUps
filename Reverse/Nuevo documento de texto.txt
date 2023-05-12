@@ -1,0 +1,11 @@
+https://play.picoctf.org/events/72/challenges/challenge/372?page=2
+
+AUTHOR: MUBARAK MIKAIL
+
+Description
+Try reversing this file? Can ya?
+I forgot the password to this file. Please find it for me?
+
+Abrí el archivo con vscode y en texto plano estaba la flag, solo fue cuestion de buscar en el archivo
+
+picoCTF{3lf_r3v3r5ing_succe55ful_d55531cd}

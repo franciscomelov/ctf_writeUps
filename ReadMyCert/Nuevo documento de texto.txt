@@ -1,0 +1,9 @@
+https://play.picoctf.org/events/72/challenges/challenge/367
+
+Utilizae un csr decode
+
+https://www.sslshopper.com/csr-decoder.html
+
+CSR Information:
+Common Name: picoCTF{read_mycert_60f83ace}
+Key Size: 2048 bit

@@ -1,0 +1,17 @@
+Description
+Can you make a CoreWars warrior that always loses, no ties?
+Your opponent is the Imp. The source is available here. If you wanted to pit the Imp against himself, you could download the Imp and connect to the CoreWars server like this:
+nc saturn.picoctf.net 54794 < imp.red
+
+picoCTF{h3r0_t0_z3r0_4m1r1gh7_a7bf8a57}
+
+NO estoy familiarizado con el juego.
+Para conseguir el flag modifique el archivo imp red:
+;redcode
+;name Imp Ex
+;assert 2
+mov 2, 3
+end
+
+tambien entrando al servidor con este comando "nc saturn.picoctf.net 54794" me pidio escribir el warrioe automaticamente.
+solo escribiendo end y dando enter me dio el flag

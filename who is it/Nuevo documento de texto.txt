@@ -1,0 +1,19 @@
+https://play.picoctf.org/events/72/challenges/challenge/388?page=1&search=&user_solved=1
+
+AUTHOR: JUNIAS BONOU
+
+Description
+Someone just sent you an email claiming to be Google's co-founder Larry Page but you suspect a scam.
+Can you help us identify whose mail server the email actually originated from?
+Download the email file here. Flag: picoCTF{FirstnameLastname}
+
+Dentro del archivo eml habia informacion del remitente, 
+la ip "173.249.33.206" estaba ligada a quien envio el correo
+buscando la ip en "https://www.whois.com/" dio informacion sobre la ip entre los datos estaba esto:
+source:         RIPE # Filtered
+
+person:         Wilhelm Zwalina
+address:        Contabo GmbH
+address:        Aschauer Str. 32a
+
+picoCTF{WilhelmZwalina}

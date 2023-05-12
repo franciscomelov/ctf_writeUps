@@ -1,0 +1,20 @@
+https://play.picoctf.org/events/72/challenges/challenge/369?page=2&search=&user_solved=1
+
+Can you make a CoreWars warrior that wins?
+Your opponent is the Imp. The source is available here. If you wanted to pit the Imp against himself, you could download the Imp and connect to the CoreWars server like this:
+nc saturn.picoctf.net 54776 < imp.red
+To get the flag, you must beat the Imp at least once out of the many rounds.
+
+Buscando en la documentacion de Corewars dan este ejemplo:
+
+;redcode
+;name Imp Ex
+add #4, 3
+mov 2, @2
+jmp -2
+dat #0, #0
+end
+
+
+Esto le gano a su programa y dio el flag
+picoCTF{1mp_1n_7h3_cr055h41r5_dba6f40d}

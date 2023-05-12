@@ -1,0 +1,19 @@
+https://play.picoctf.org/events/72/challenges/challenge/381?page=2
+
+
+You will find the flag after analysing this apk
+Download here.
+
+utilizando un analizar de apk online, https://www.sisik.eu/apk-tool
+los datos de la version era el flag
+
+Package name
+com.example.timer
+versionCode
+1
+versionName
+picoCTF{t1m3r_r3v3rs3d_succ355fully_17496}
+Minimal supported Android version
+Lollipop (5) - API level 21
+
+picoCTF{t1m3r_r3v3rs3d_succ355fully_17496}

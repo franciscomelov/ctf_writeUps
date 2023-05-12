@@ -1,0 +1,12 @@
+https://play.picoctf.org/events/72/challenges/challenge/374?page=2
+
+Read the rules of the competition and get a little bonus!
+Rules
+
+
+
+primero hice una busqueda de "picoCTF" pero no hubo resultado.
+
+en la consola hice la busque tambien y aparecio  el flaf en el atributo alt de una imagen, la imagen era el flag por eso aprecio en la busque de la paguina
+
+picoCTF{h34rd_und3r5700d_4ck_cba1c711}

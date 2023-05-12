@@ -1,0 +1,13 @@
+AUTHOR: GEOFFREY NJOGU
+
+Description
+Can you read files in the root file?
+The system admin has provisioned an account for you on the main server:
+ssh -p 62551 picoplayer@saturn.picoctf.net
+Password: 8nVVw6hmD7
+Can you login and read the root file?
+
+una vez contectando estro al servidor
+y navegando por los directorios habia una carpeta "challenge" dentro hay un archivo "metadata.json" con los siguientes datos
+
+{"flag": "picoCTF{uS1ng_v1m_3dit0r_ad091ce1}", "username": "picoplayer", "password": "8nVVw6hmD7"}

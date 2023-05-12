@@ -1,0 +1,5 @@
+https://play.picoctf.org/events/72/challenges/challenge/362
+Abriendo el archivo con vscode y haciendo la busqueda "pico"
+
+dio como resultado la flag
+picoCTF{P64P_4N4L7S1S_SU55355FUL_b151bc51}

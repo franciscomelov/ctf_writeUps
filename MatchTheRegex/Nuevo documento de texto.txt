@@ -1,0 +1,22 @@
+https://play.picoctf.org/events/72/challenges/challenge/356?page=1&user_solved=1
+
+AUTHOR: SUNDAY JACOB NWANYIM
+
+Description
+How about trying to match a regular expression
+The website is running here.
+
+El codigo tenia este script:
+unction send_request() {
+		let val = document.getElementById("name").value;
+		// ^p.....F!?
+		fetch(`/flag?input=${val}`)
+
+que se llamava al apretar el boton
+
+tomano en cuenta que este es el regex que se tiene que hacer match:
+^p.....F!?
+
+Me parecio logico que tenia que ser "picoCTF"
+y mando un mensaje en forma de alert con el flag
+picoCTF{succ3ssfully_matchtheregex_08c310c6}

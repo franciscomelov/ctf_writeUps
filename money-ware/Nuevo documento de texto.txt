@@ -1,0 +1,6 @@
+https://play.picoctf.org/events/72/challenges/challenge/357
+
+picoCTF{petya}
+
+buscando informaicon sobre la cartera bitcoin, varios enlaces hacian referencia al nombre del malware Petya
+https://www.cnbc.com/2017/06/28/ransomware-cyberattack-petya-bitcoin-payment.html

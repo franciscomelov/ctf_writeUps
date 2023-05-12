@@ -1,0 +1,40 @@
+https://play.picoctf.org/events/72/challenges/challenge/349?page=1&search=&user_solved=1
+
+AUTHOR: GEOFFREY NJOGU
+
+Description
+Help us test the form by submiting the username as test and password as test!
+The website running here.
+
+La pagui inicia con un formulario simple: 
+username
+password
+boton-test
+
+al usar los datos test_test!
+inicia una nuea paguina, con un textbox y un boton
+donde pide ingresar algo y para buscar el flag.
+
+al abrirlo con un procy, buro suite
+
+test:test!
+
+en la funcion de intercep con burp suite en el hearder da:
+GET /next-page/id=cGljb0NURntwcm94aWVzX2Fs HTTP/1.1
+
+cGljb0NURntwcm94aWVzX2Fs esta codificado en base64:
+picoCTF{proxies_al
+la primera parte del flag
+
+al dar en forward hay un nuevo header
+GET /next-page/id=bF90aGVfd2F5X2RmNDRjOTRjfQ== HTTP/1.1
+bF90aGVfd2F5X2RmNDRjOTRjfQ==  en base64:
+l_the_way_df44c94c}la segunda parte del flag
+
+este parte "l_the_way_df44c94c}" fue la que me llamo la atecion en un inicio puesto que los signos "==" pueden indicar que el texto esta codificado
+al comprobar que asi lo estaba pude encontrar la primera parte del flag buscando en el mismo lugar
+
+
+
+picoCTF{proxies_all_the_way_df44c94c}
+

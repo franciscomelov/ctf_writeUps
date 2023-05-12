@@ -1,0 +1,26 @@
+https://play.picoctf.org/events/72/challenges/challenge/384?page=1&search=&user_solved=1
+
+AUTHOR: LOIC SHEMA
+
+Description
+There's an interesting script in the user's home directory
+The work computer is running SSH. We've been given a script which performs some basic calculations, explore the script and find a flag.
+Hostname: saturn.picoctf.net
+Port:     57208
+Username: picoplayer
+Password: password
+
+
+Dentro del servidor hay un archivo "useless"
+al correrlo pide que hay que leer el codigo
+es una calculadora 
+./useless add 2 3
+regresa 5
+
+al final del codigo hay una line que dice "read the manual"
+
+al ejecutar "man useless", nos da el manual del programa
+
+dentro esta la bandera
+
+picoCTF{us3l3ss_ch4ll3ng3_3xpl0it3d_7065}

@@ -1,0 +1,16 @@
+https://play.picoctf.org/events/72/challenges/challenge/350
+
+
+AUTHOR: GEOFFREY NJOGU
+
+Description
+Every file gets a flag.
+The SOC analyst saw one image been sent back and forth between two people. They decided to investigate and found out that there was more than what meets the eye here.
+
+La imagen tenia un zip escondido, con una carpeta "secret" y dentro una imagen "flag.png". laimagen es el glag que se buscaba
+
+se utilizo la herramienta "aperisolve.fr"
+alguna veces se puede intentar abrir un archivo con zip y nos dice y hay algun zip oculto en ese caso no funciono por eso se utilizo aperisolve
+
+
+picoCTF{Hiddinng_An_imag3_within_@n_ima9e_989f4b96}

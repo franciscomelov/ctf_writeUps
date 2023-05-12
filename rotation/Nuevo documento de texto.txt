@@ -1,0 +1,14 @@
+https://play.picoctf.org/events/72/challenges/challenge/373?page=2
+
+AUTHOR: LOIC SHEMA
+
+Description
+You will find the flag after decrypting this file
+Download the encrypted flag here.
+
+Por la forma del texto encriptado
+busque coincidencia en picoCTF
+la "c" se repite en el codigo el caracter en esas posiciones tambien lo hacen , ai que deduje que estaba encriptado en caesar rotation.
+rot18
+
+picoCTF{r0tat1on_d3crypt3d_fd5c4283}

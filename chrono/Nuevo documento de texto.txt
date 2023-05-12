@@ -1,0 +1,13 @@
+https://play.picoctf.org/events/72/challenges/challenge/347?page=1&search=&user_solved=1
+
+Description
+How to automate tasks to run at intervals on linux servers?
+Use ssh to connect to this server:
+Server: saturn.picoctf.net
+Port: 50842
+Username: picoplayer 
+Password: gLST9GqUXg
+
+aL navegar por el servidor en habia una carpeta "challenge" donde, esta vez si se pudo entrar , dentro hay un archivo json con la siguiente informacion
+
+{"flag": "picoCTF{Sch3DUL7NG_T45K3_L1NUX_d83baed1}", "username": "picoplayer", "password": "gLST9GqUXg"}

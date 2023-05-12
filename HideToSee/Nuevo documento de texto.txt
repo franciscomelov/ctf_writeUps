@@ -1,0 +1,37 @@
+https://play.picoctf.org/events/72/challenges/challenge/351?page=1&search=
+
+
+AUTHOR: SUNDAY JACOB NWANYIM
+
+Description
+How about some hide and seek heh?
+Look at this image here.
+
+
+utilizando https://aperisolve.fr/
+	No se encontro nada
+
+utilizando el comando file <imagen>
+	la imagen es jpeg
+
+>se cambio la terminacion
+
+usando steghide --info <imagen>
+ da aviso de que hay un archivo oculto
+Enter passphrase: 
+  embedded file "encrypted.txt":
+    size: 31.0 Byte
+    encrypted: rijndael-128, cbc
+    compressed: yes
+
+> se uso steghide extract -sf <imagen>
+para extraer el txt escondido pedia una contraseña pero como no tiene solo hay que dar enter
+
+
+el archivo txt tenia 
+krxlXGU{zgyzhs_xizxp_1u84w779}
+
+En un principio pense que estaba en rot pero seria obvio que estaba encriptado con el codigo de la imagen atbash cypher
+picoCTF{}
+
+
