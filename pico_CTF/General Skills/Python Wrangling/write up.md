@@ -3,6 +3,7 @@
 ## Category: General skills
 
 ## Description
+https://play.picoctf.org/practice/challenge/166
 Python scripts are invoked kind of like programs in the Terminal... Can you run this Python script using this password to get the flag?
 
 
