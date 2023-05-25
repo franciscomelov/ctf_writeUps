@@ -76,15 +76,11 @@ unknown_char = chr(encoded_char - (ord(known_letter) << 8))
 print(unknown_char)
 # retorna i
 ```
-hare una pruebamas con los ultimos caracteres
+hare una prueba mas con los ultimos caracteres
 encoded_char = ord("扽") #primer caracter encriptado
 known_letter = "b" # letra conocida que se pudo desencriptar
 
-unknown_char = chr(encoded_char - (ord(known_letter) << 8))
-#esta parte es lo inver del algoritmo original chr((ord(flag[i]) << 8) + ord(flag[i + 1]))
 
-print(unknown_char)
-# retorna }
 ```
 encoded_char = ord("扽") #primer caracter encriptado
 known_letter = "b" # letra conocida que se pudo desencriptar
@@ -114,8 +110,11 @@ print(original_flag)
 
 # retorna picoCTF{16_bits_inst34d_of_8_75d4898b}
 ```
-
-
+Esto tomara cada caracter encriptado y la parte que se pudo desencriptar y retornará el cracter faltante  
+灩 p -> haran "pi"  
+捯 c -> harán "co"  
+䍔 C -> harán "CT"  
+....
 
 ## flag
 ```
