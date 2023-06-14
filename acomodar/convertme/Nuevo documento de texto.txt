@@ -1,0 +1,3 @@
+https://play.picoctf.org/practice/challenge/239?category=5&page=2
+
+solo convierte el numero a binario
