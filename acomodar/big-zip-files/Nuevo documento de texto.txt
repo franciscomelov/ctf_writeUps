@@ -1,0 +1,7 @@
+picoCTF{gr3p_15_m4g1c_ef8790dc}
+
+https://play.picoctf.org/practice/challenge/322?category=5&page=1&solved=1
+
+grep -r "pico" big-zip-files
+
+usando grep pero ahora añaadi la opcion -r para que busque en todos los archivos del directorio
