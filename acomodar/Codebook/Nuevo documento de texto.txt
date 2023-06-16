@@ -1,1 +1,2 @@
 https://play.picoctf.org/practice/challenge/238?category=5&page=1&solved=1
+solo habia que correr el script con el txt en la misma carpeta
