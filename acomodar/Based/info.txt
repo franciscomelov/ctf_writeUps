@@ -1,0 +1,10 @@
+https://play.picoctf.org/practice/challenge/35?category=5&page=1&solved=1
+
+Al ingresar al servidor
+este da una serie de instrucciones, convertir texto en diferentes tipos de encoding
+binario
+octal
+hex
+
+al responder correctamente regresa la flag
+ picoCTF{learning_about_converting_values_b375bb16}
