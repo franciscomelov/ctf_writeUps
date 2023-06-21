@@ -1,0 +1,21 @@
+https://play.picoctf.org/practice/challenge/48?category=5&page=1&solved=1
+
+picoCTF{digital_plumb3r_5ea1fbd7}
+
+al ejecutar
+nc jupiter.challenges.picoctf.org 4427
+
+retornaba muchas lineas de texto
+las instrucciones dicen que hay que buscar en el output pero como era mucho texto no se podia navegar desde la terminal
+
+ejecutando esto
+nc jupiter.challenges.picoctf.org 4427 > test.txt
+
+el el texto se guarda en test.txt
+para poder buscar mejor
+
+pero era mucho texto como para buscar linea porlinea
+
+usan grep para buscar coincidencias
+grep pico test.txt
+retorno la flag
