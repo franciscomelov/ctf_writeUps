@@ -1,0 +1,10 @@
+picoCTF{rrrocknrn0113r}
+
+la cancion es un lenguaje de programacion llamado rockstar
+
+al correrlo en el editor
+
+https://codewithrockstar.com/online
+
+retorna una serie de numeros al convertirlos de ascii a texto retorna la flag
+rrrocknrn0113r
