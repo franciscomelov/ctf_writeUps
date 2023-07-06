@@ -1,0 +1,57 @@
+
+
+
+TABLE Proyectos {
+  proyecto_id INT [pk]
+  nombre VARCHAR(255)
+  descripcion TEXT
+  inicio_fecha DATE
+  fin_fecha DATE
+  estado VARCHAR(50)
+}
+
+TABLE Clientes{
+  cliente_id INT [pk]
+  nombre VARCHAR(255)
+  direccion VARCHAR(255)
+  contacto_detalles VARCHAR(255)
+}
+
+ TABLE Equipos{
+  equipo_id INT [pk]
+  lider_equipo VARCHAR(255)
+  proyecto_id int [ref: > Proyectos.proyecto_id ]
+}
+
+ TABLE Tareas {
+  tarea_id INT [pk]
+  descripcion TEXT
+  inicio_fecha DATE
+  fin_fecha DATE
+  estado VARCHAR(50)
+  equipo_id int  [ref: > Equipos.equipo_id] 
+}
+
+ TABLE seguimiento{
+  seguimiento_id INT [pk]
+  inicio DATETIME
+  final DATETIME
+  horas DECIMAL(5, 2)
+  tarea_id int [ref: > Tareas.tarea_id]  
+}
+
+ TABLE Costos {
+  costo_id INT [pk]
+  descripcion TEXT
+  cantidad DECIMAL(10 2)
+  fecha DATE
+  proyecto_id int 
+}
+
+ TABLE Metas {
+  meta_id INT [pk]
+  descripcion TEXT
+  fecha_limite DATE
+  estado VARCHAR(50)
+  proyecto_id int  [ref: > Proyectos.proyecto_id]
+}
