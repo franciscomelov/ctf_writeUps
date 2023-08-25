@@ -1,0 +1,10 @@
+en la paguina de marckdown o testing con solo agregar una etique img
+con la siguiente sintaxis
+<img srx="x" onerror="">
+
+al guardar
+all pages <img srx="x" onerror="">: 
+<img src="x" flag="^FLAG^d703455b30f7ca0f599e3462759803e186f63d625aa4cd6f3f7bf65e47ce6df2$FLAG$" onerror="">
+
+new page, agregar alert o img en el titulo y al regresar a home aparece un pop up con:
+^FLAG^de1e04b57dac347c44c029df7ec499e536d00e4a2d57178de265e8a87e837942$FLAG$

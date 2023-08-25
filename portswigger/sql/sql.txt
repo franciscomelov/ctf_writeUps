@@ -1,0 +1,4 @@
+https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data
+https://0ad30012047cacb38165bc4200650071.web-security-academy.net/filter?category=Pets%27+or+1=1--
+
+
