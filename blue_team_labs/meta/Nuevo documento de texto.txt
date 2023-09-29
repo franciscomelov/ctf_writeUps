@@ -1,0 +1,18 @@
+file <file>
+it returns  info from the file in plain text, 
+example: datetime=2021:11:02 13:20:23
+for the date flag and the othe questions
+for the city, doing a image search on the second picture returned the city
+
+
+What is the camera model?
+Canon EOS 550D
+
+When was the picture taken?
+2021:11:02 13:20:23
+
+What does the comment on the first image says? 
+relying on altered metadata to catch me?
+
+Where could the criminal be?
+Kathmandu
