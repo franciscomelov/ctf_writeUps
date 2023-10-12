@@ -1,0 +1,10 @@
+https://blueteamlabs.online/home/challenge/shiba-insider-5b48123711
+
+tools used
+https://apackets.com/
+VScode
+
+allthe answers can be found in plain text in the pcap file
+using https://aperisolve.fr/ in the image extracte a zip file with the answer for the id
+
+the id looks similar to the id given by blueteamlabs.online pastin the id in the txt file we get blueteamlab user that user is for the last answer
