@@ -14,6 +14,11 @@ add link if aveliable...
 Solution...
 
 ## flag
-```
-flag{}
-```
+
+<details>
+<summary>Flag</summary>
+
+  ```
+  picoCTF{}
+  ```
+</details>
