@@ -1,4 +1,5 @@
 # write-up
+https://blueteamlabs.online/home/challenge/follina-f1a3452f34
 
 - Question 1) What is the SHA1 hash value of the sample? (Format: SHA1Hash)
 
@@ -52,3 +53,26 @@ Question 4) What is the name of the XML file that is storing the extracted URL? 
   document.xml.rels
   ```
 </details>
+
+---
+Question 5) The extracted URL accesses a HTML file that triggers the vulnerability to execute a malicious payload. According to the HTML processing functions, any files with fewer than ```<Number>``` bytes would not invoke the payload. Submit the ```<Number>``` (Format: Number of Bytes)
+ <details>
+  <summary>Flag</summary>
+
+  ```
+  4096
+  ```
+</details>
+El archivo es una ataque real, buscando informacion en linea se puede encontrar como funcionaba
+
+https://www.secpod.com/blog/critical-alert-microsoft-support-diagnostic-tool-rce-vulnerability-exploited-in-the-wild/
+---
+Question 6) After execution, the sample will try to kill a process if it is already running. What is the name of this process? (Format: filename.ext) 
+ <details>
+  <summary>Flag</summary>
+
+  ```
+ msdt.exe
+  ```
+</details>
+buscando en linea se puede encontrar el codigo del archivo "RDF842l.html", donde se ejecuta el exploit, en la descripcion del CVE se puede encontrar como funciona.
