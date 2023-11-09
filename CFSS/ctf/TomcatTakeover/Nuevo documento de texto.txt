@@ -1,0 +1,21 @@
+
+1 - Given the suspicious activity detected on the web server, the pcap analysis shows a series of requests across various ports, suggesting a potential scanning behavior. Can you identify the source IP address responsible for initiating these requests on our server?
+14.0.0.120
+utilizando network miner, esra la ip con mas paquetes enviado y recividos que no fuera de una ip dentro de la red 
+tambien podemo ver nmamao en su descripcion "p0f (NetSA): *NMAP syn scan (5) [*NMAP] (100.00 %) "
+---
+
+2 - Based on the identified IP address associated with the attacker, can you ascertain the city from which the attacker's activities originated?
+Guangzhou
+utilizando alguna paguina como "https://www.ip2location.io/" es posible extraer la informacion de la ip, como la dirrecion completa
+
+---
+3 - From the pcap analysis, multiple open ports were detected as a result of the attacker's activitie scan. Which of these ports provides access to the web server admin panel?
+8080
+port 8080 can be used to run web servers for remote managment
+
+----
+
+Following the discovery of open ports on our server, it appears that the attacker attempted to enumerate and uncover directories and files on our web server. Which tools can you identify from the analysis that assisted the attacker in this enumeration process?
+gobuster
+the ip used gobusterm and is a tool used to brute-force URIs including directories and files as well as DNS subdomains.
