@@ -29,4 +29,6 @@ alert tcp any any <> any any  (msg: "PNG found"; content:"|89 50 4E|"; sid: 1000
 alert tcp any any <> any any (msg:"torrent file"; content:".torrent"; nocase; sid:100001; rev:1;)
 
 
+#
+alert tcp any any <> any any (msg:"check keyword"; content:"\\IPC$"; sid:100001; rev:1;)
 
