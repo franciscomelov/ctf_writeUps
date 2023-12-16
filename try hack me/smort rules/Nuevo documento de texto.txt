@@ -1,0 +1,32 @@
+#   rules to detect "all TCP port 21"  traffic in the given pcap.
+alert tcp any 21 <> any any (msg:"tcp port 21"; sid:100001; rev:1;)
+alert tcp any any <> any 21 (msg:"tcp port 21"; sid:100002; rev:1;)
+
+
+#   rule to detect failed FTP login attempts in the given pcap.
+alert tcp any any <> any [20,21] (msg:"530; content:"cannot log in";nocase; sid:100002; rev:1;)
+alert tcp any any <> any [20,21] (msg:"530; content:"530";nocase; sid:100002; rev:1;)
+
+#   rule to detect succesful FTP login attempts in the given pcap.
+alert tcp any any <> any 21 (msg:"ftp filed login attempt"; content:"230"; sid:100002; rev:1;)
+
+
+#   rule to detect failed FTP login attempts with a valid username but a bad password or no password.
+alert tcp any any <> any 21 (msg:"ftp filed login attempt"; content:"331"; sid:100002; rev:1;)
+
+#   rule to detect failed FTP login attempts with "Administrator" username but a bad password or no password.
+alert tcp any any <> any 21 (msg:"ftp filed login attempt"; content:"Administrator";nocase; content:"331"; sid:100002; rev:1;)
+
+#    rule to detect the GIF file in the given pcap.
+alert tcp any any <> any any  (msg: "GIF found"; content:"|47 49 46 38|"; sid: 100001; rev:1;)
+sudo snort -e -X -r pcap-file |grep "47 49 46 38"
+# file signatures
+
+#    rule to detect the PNG file in the given pcap.
+alert tcp any any <> any any  (msg: "PNG found"; content:"|89 50 4E|"; sid: 100001; rev:1;)
+
+#     rule to detect the torrent metafile in the given pcap.
+alert tcp any any <> any any (msg:"torrent file"; content:".torrent"; nocase; sid:100001; rev:1;)
+
+
+
