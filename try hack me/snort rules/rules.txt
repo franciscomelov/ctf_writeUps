@@ -1,3 +1,30 @@
+#   Just console
+sudo snort -c local.rules -A console 
+
+#  create alert
+sudo snort -c local-1.rules -A full -l . -r <pcap file>
+
+sudo snort -X -r <snort log>
+cat alert
+
+sudo tcpdump -r <snort log>
+....| grep "string to find"
+
+ips
+-c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A console
+-c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A full -l .
+
+
+
+
+current
+
+blobk
+22- ->    -22 -> 
+80- -> <>
+ssh content
+
+
 #   rules to detect "all TCP port 21"  traffic in the given pcap.
 alert tcp any 21 <> any any (msg:"tcp port 21"; sid:100001; rev:1;)
 alert tcp any any <> any 21 (msg:"tcp port 21"; sid:100002; rev:1;)
@@ -29,6 +56,9 @@ alert tcp any any <> any any  (msg: "PNG found"; content:"|89 50 4E|"; sid: 1000
 alert tcp any any <> any any (msg:"torrent file"; content:".torrent"; nocase; sid:100001; rev:1;)
 
 
-#
+#    rule to detect payloads containing the "\IPC$" keyword.
 alert tcp any any <> any any (msg:"check keyword"; content:"\\IPC$"; sid:100001; rev:1;)
 
+
+#    rule to detect packet payloads between 770 and 855 bytes.
+alert tcp any any <> any any (msg:"file size 770 - 855"; dsize:770<>855; sid:100001; rev:1;)
