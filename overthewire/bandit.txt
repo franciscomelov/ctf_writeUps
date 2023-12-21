@@ -1,0 +1,84 @@
+bandit 0
+  ssh bandit0@bandit.labs.overthewire.org -p 2220
+$cat readme
+readme -> NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+
+bandit 1 >2
+  ssh bandit1@bandit.labs.overthewire.org -p 2220
+  pass:NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+$cat < -
+- -> rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
+bandit 2 >3
+$ssh bandit2@bandit.labs.overthewire.org -p 22207
+pass:rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+$cat spaces\ in\ this\ filename
+spaces\ in\ this\ filename -> aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+
+bandit 3 >4
+$ssh bandit3@bandit.labs.overthewire.org -p 22207
+pass:aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+$ls
+$cd inhere
+$ls
+$ls -la
+$file .hidden
+$cat .hidden
+.hidden -> 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+
+bandit 4 >5
+$ssh bandit4@bandit.labs.overthewire.org -p 22207
+pass:2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+$ls
+$cd inhere
+$ls
+$ls -la
+try every file
+$cat < -file07
+lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+
+bandit 5 >6
+$ssh bandit5@bandit.labs.overthewire.org -p 22207
+pass:lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+$ls
+$cd inhere
+$ls
+$ls -la
+$find -size 1033c
+  //find a file with size 1033 bytes, match the file description
+>./maybehere07/.file2
+$cat ./maybehere07/.file2
+>./maybehere07/.file2
+>P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+.file2 -> P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+
+bandit 6 >7
+$ssh bandit6@bandit.labs.overthewire.org -p 22207
+pass:P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+$ls -al
+$cd ..
+$cd ..
+$ find -group bandit6 -user bandit7 -size 33c
+//return all files that mathed owned by group bandit 6, user bandit7 size33c
+//returned some errors from files that cannot be acced
+>./var/lib/dpkg/info/bandit7.password
+//this file was the only one accesable
+$cat ./var/lib/dpkg/info/bandit7.password
+>z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+bandit7.password -> z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+
+bandit 7 > 8
+$ssh bandit7@bandit.labs.overthewire.org -p 2220
+pass: z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+$ ls
+$ head data.txt
+$ grep million data.txt
+$grep millionth data.txt
+>TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+pass -> TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+
+bandit 8 > 9
+$ssh bandit8@bandit.labs.overthewire.org -p 2220
+pass: TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+$ls
+$
