@@ -1,0 +1,17 @@
+#analize
+zeek -C -r <file>
+
+#analize log file by field
+cat <log file> | zeek-cut <field>
+
+#Investigate the dns.log file. What is the number of unique DNS queries?
+cat dns.log | zeek-cut query | uniq -c 
+
+# Investigate the conn.log file. What is the longest connection duration?
+cat conn.log | zeek-cut duration | sort -n
+
+
+
+
+
+

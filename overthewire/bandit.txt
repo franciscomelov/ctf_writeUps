@@ -123,3 +123,20 @@ pass -> JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 bandit 12 > 13
 $ssh bandit12@bandit.labs.overthewire.org -p 2220
 pass: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+
+
+move to temp folder rename data2.bin
+cope data2.bin to data3
+decompress as gzip
+decompres as bzip2
+decompress as gzip
+file <file>
+syay is a tar archive
+extract tar xvf <file.tar>
+multiple gzip bzip2 tar compresion
+gzip -> zg
+b2zip bzuo
+tar -> tar
+use file <file>to see tyoe op file
+chage the extention and then dcomplress
+pass -> The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
