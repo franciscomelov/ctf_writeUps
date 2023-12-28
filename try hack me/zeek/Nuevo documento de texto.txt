@@ -10,6 +10,9 @@ cat dns.log | zeek-cut query | uniq -c
 # Investigate the conn.log file. What is the longest connection duration?
 cat conn.log | zeek-cut duration | sort -n
 
+# Investigate the notice.log. What is the number of unique events?
+cat notice.log| zeek-cut uid | sort | uniq | nl
+
 
 
 
