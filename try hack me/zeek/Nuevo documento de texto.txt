@@ -1,6 +1,8 @@
 #analize
 zeek -C -r <file>
 
+zeek -C -r <pcap file> -s <.sigfile>
+
 #analize log file by field
 cat <log file> | zeek-cut <field>
 
@@ -12,6 +14,23 @@ cat conn.log | zeek-cut duration | sort -n
 
 # Investigate the notice.log. What is the number of unique events?
 cat notice.log| zeek-cut uid | sort | uniq | nl
+cat dhcp.log | zeek-cut host_name | sort -nr |uniq| nl
+
+# Investigate the sample.pcap file with 103.zeek script. Investigate the terminal output. What is the number of the detected new connections?
+cat conn.log | zeek-cut uid | nl
+
+#Investigate the signatures.log file. What is the total number of "administrator" username detections?
+cat signatures.log | zeek-cut sub_msg | grep "administrator"|nl
+
+#Investigate the intel.log file. Look at the second finding, where was the intel info found? 
+cat intel.log |zeek-cut seen.where
+
+# Investigate the files.log file. What is the MD5 hash of the downloaded .exe file?
+cat files.log | zeek-cut mime_type md5 | column -t
+
+
+# Which IP address is associated with the identified City?
+cat conn.log | zeek-cut id.resp_h geo.resp.city
 
 
 
