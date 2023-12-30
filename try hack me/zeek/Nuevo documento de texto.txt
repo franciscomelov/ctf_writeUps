@@ -33,6 +33,12 @@ cat files.log | zeek-cut mime_type md5 | column -t
 cat conn.log | zeek-cut id.resp_h geo.resp.city
 
 
+#Investigate the dns-tunneling.pcap file. Investigate the dns.log file. What is the number of DNS records linked to the IPv6 address?
+cat dns.log |zeek-cut qtype_name |grep AAAA|nl9.420791
+
+https://docs.zeek.org/en/master/logs/dns.html
+
+
 
 
 
