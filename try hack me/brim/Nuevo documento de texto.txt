@@ -1,0 +1,11 @@
+#  What is the number of CobaltStrike connections using port 443?
+look for 104.xxx ssl
+_path=="conn" |cut id.resp_h, service| sort |uniq -c
+
+#There is an additional C2 channel in used the given case. What is the name of the secondary C2 channel?
+I used virus total
+event_type=="alert" | cut alert.signature | sort -r | uniq -c | sort -r count
+
+# What is the amount of transferred total bytes to "101.201.172.235:8888"?
+_path=="conn" |  101.201.172.235|put total_bytes:=orig_bytes + resp_bytes|cut  uid, id, total_bytes
+
