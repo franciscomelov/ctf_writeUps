@@ -9,3 +9,8 @@ event_type=="alert" | cut alert.signature | sort -r | uniq -c | sort -r count
 # What is the amount of transferred total bytes to "101.201.172.235:8888"?
 _path=="conn" |  101.201.172.235|put total_bytes:=orig_bytes + resp_bytes|cut  uid, id, total_bytes
 
+#How many binaries were downloaded from the above domain in total? 
+_path=="http" | .exe | count() by uri
+
+Provided the user-agent listed to download the binaries. 
+_path=="http"|cut uri, user_agent

@@ -1,0 +1,26 @@
+#What is the number of "HTTP GET" requests sent to port "80"?
+(http.request.method == "GET")  &&  (tcp.dstport==80)
+
+#What is the number of "type A DNS Queries"?
+dns.a
+
+#Find all Microsoft IIS servers. What is the number of packets that did not originate from "port 80"?
+(http.server contains "Microsoft-IIS") && !(tcp.srcport==80)
+
+#Find all Microsoft IIS servers. What is the number of packets that have "version 7.5"?
+(http.server contains "Microsoft-IIS/7.5") 
+
+What is the total number of packets that use ports 3333, 4444 or 9999?
+tcp.port in {3333 4444 9999} 
+
+What is the number of packets with "even TTL numbers"?
+string(ip.ttl) matches "[24680]$"
+
+Change the profile to "Checksum Control". What is the number of "Bad TCP Checksum" packets?
+tcp.checksum.status == "Bad"
+
+
+
+
+
+
