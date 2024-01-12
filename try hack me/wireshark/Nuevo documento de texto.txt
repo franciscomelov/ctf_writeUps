@@ -20,7 +20,24 @@ Change the profile to "Checksum Control". What is the number of "Bad TCP Checksu
 tcp.checksum.status == "Bad"
 
 
+#What is the total number of the "TCP Connect" scans?
+tcp.flags.syn==1 and tcp.flags.ack==0 and tcp.window_size > 1024
 
+#What is the number of ARP requests crafted by the attacker?
+arp.src.hw_mac==00:0c:29:e2:18:b4 && arp.opcode==1
+
+#What is the number of HTTP packets received by the attacker?
+eth.dst ==  00:0c:29:e2:18:b4  && http
+
+#What is the password of the "Client986"?
+look as string
+
+What is the comment provided by the "Client354"?
+look as string
+
+#What is the number of sniffed username&password entries?
+urlencoded-form
+seach for "pass"
 
 
 
