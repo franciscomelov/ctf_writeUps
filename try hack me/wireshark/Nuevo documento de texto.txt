@@ -40,4 +40,17 @@ urlencoded-form
 seach for "pass"
 
 
+# What is the MAC address of the host "Galaxy A30"?
+dhcp.option.hostname contains "Galaxy-A30"
 
+#How many NetBIOS registration requests does the "LIVALJM" workstation have?
+nbns.flags.opcode==5 and  (nbns.name contains "LIVA")
+
+#Which host requested the IP address "172.16.13.85"?
+dhcp.option.requested_ip_address == 172.16.13.85
+
+#What is the IP address of the user "u5"? (Enter the address in defanged format.)
+kerberos.CNameString contains "u5"
+
+#What is the hostname of the available host in the Kerberos packets?
+kerberos.CNameString contains "$"
