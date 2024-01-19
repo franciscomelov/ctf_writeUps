@@ -54,3 +54,6 @@ kerberos.CNameString contains "u5"
 
 #What is the hostname of the available host in the Kerberos packets?
 kerberos.CNameString contains "$"
+
+#What is the frame number of the "Client Hello" message sent to "accounts.google.com"?
+tls.handshake.extensions_server_name == "accounts.google.com"
