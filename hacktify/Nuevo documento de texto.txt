@@ -1,0 +1,17 @@
+notes forhacktify internship
+https://hacktify.thinkific.com/courses/take/cyber-security-internship-week-1/pdfs/52743177-week-1-technical-guide
+
+resources
+http://testphp.vulnweb.com
+
+
+HTML Injection by Acunetix : https://www.acunetix.com/vulnerabilities/web/html-
+injection/
+
+OWASP HTML Injection : https://owasp.org/www-project-web-security-testing-
+guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/03-
+
+Testing_for_HTML_Injection
+
+HTML Injection by Imperva : https://www.imperva.com/learn/application-security/html-
+injection/
