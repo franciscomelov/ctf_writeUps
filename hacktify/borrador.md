@@ -24,3 +24,10 @@ flag{}
   long console output here
   ```
 </details>
+
+elcacas</b>"<Svg onclick="console.log(document.cookie)"></svg>
+
+
+elcacas</b>"<Svg onclick="window.open('https://www.google.com', '_blank')"></svg>
+
+elcacas</b>"<Svg onclick="eval("ls")"></svg>
