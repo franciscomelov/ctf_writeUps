@@ -1,0 +1,20 @@
+#Using the knowledge gained on Get-WinEvent and XPath, what is the query to find WLMS events with a System Time of 2020-12-15T01:09:08.940277500Z?
+Get-winEvent -LogName Application -FilterXPath '*/System/Provider[@Name="WLMS"] and */System/TimeCreated[@SystemTime="2020-12-15T01:09:08.940277500Z"]'
+
+#Using Get-WinEvent and XPath, what is the query to find a user named Sam with an Logon Event ID of 4720?
+Get-Winevent -LogName Security -filterXPath '*/EventData/Data[@Name="TargetUserName"]="Sam" and */System/EventID=4720'
+
+#What event ID is to detect a PowerShell downgrade attack?
+400
+
+#A Log clear event was recorded. What is the 'Event Record ID'?
+ Get-WinEvent -Path .\merged.evtx  -FilterXpath '*/System/EventID=400' -MaxEvents 5
+get the date
+
+What is the name of the first variable within the PowerShell command?
+Get-WinEvent -Path .\merged.evtx  -FilterXpath '*/System/Provider[@Name="Microsoft-Windows-PowerShell"]'  -Maxevents 5 -oldest
+get id and search in gui for the variable in general $...
+
+#What is the Group Security ID of the group she enumerated?
+the event id is 4799
+based on this we get the log of the oldest event and search for the id
