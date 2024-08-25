@@ -1,0 +1,47 @@
+https://tryhackme.com/r/room/splunk201
+
+containing the term ".exe.":
+index=botsv1 sourcetype=stream:http dest_ip="192.168.250.70" *.exe
+
+
+**Sysmon also collects the Hash value of the processes being created. What is the MD5 HASH of the program 3791.exe?:
+index=botsv1 3791.exe sourcetype=xmlwineventlog EventID=1 Image="C:\\inetpub\\wwwroot\\joomla\\3791.exe"
+
+
+**Looking at the logs, which user executed the program 3791.exe on the server?:
+search on the fields
+
+
+**Search hash on the virustotal. What other name is associated with this file 3791.exe?:
+search on virustotal
+
+
+What is the name of the file that defaced the imreallynotbatman.com website ?:
+Search Query: index=botsv1 src=192.168.250.70 sourcetype=suricata dest_ip=23.22.63.114
+url field
+
+
+whatch comunications
+index=botsv1 url="/poisonivy-is-coming-for-you-batman.jpeg" dest_ip="192.168.250.70" | table _time src dest_ip http.hostname url
+index=botsv1 url="/poisonivy-is-coming-for-you-batman.jpeg"| table _time src dest_ip http.hostname url
+
+
+**Fortigate Firewall 'fortigate_utm' detected SQL attempt from the attacker's IP 40.80.148.42. What is the name of the rule that was triggered during the SQL Injection attempt?
+index=botsv1 sourcetype=fortigate_utm src_ip="40.80.148.42"
+search the field for attacks
+
+see where the image was downloades
+get request
+index=botsv1 sourcetype=stream:http dest_ip=23.22.63.114 "poisonivy-is-coming-for-you-batman.jpeg" src_ip=192.168.250.70
+
+**This attack used dynamic DNS to resolve to the malicious IP. What fully qualified domain name (FQDN) is associated with this attack?
+index=botsv1 sourcetype="stream:dns" 23.22.63.114
+seach in the fiels (url)
+
+What IP address has P01s0n1vy tied to domains that are pre-staged to attack Wayne Enterprises?
+23.22.63.114
+
+
+Based on the data gathered from this attack and common open-source intelligence sources for domain names, what is the email address that is most likely associated with the P01s0n1vy APT group?
+used the tip
+
