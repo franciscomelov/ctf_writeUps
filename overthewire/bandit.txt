@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     * gef (https://github.com/hugsy/gef) in /opt/gef/
     * pwndbg (https://github.com/pwndbg/pwndbg) in /opt/pwndbg/
     * peda (https://github.com/longld/peda.git) in /opt/peda/
@@ -29,11 +30,33 @@ spaces\ in\ this\ filename -> MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
 bandit 3 >4
 $ssh bandit3@bandit.labs.overthewire.org -p 2220
+=======
+bandit 0
+  ssh bandit0@bandit.labs.overthewire.org -p 2220
+$cat readme
+readme -> NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+
+bandit 1 >2
+  ssh bandit1@bandit.labs.overthewire.org -p 2220
+  pass:NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+$cat < -
+- -> rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
+bandit 2 >3
+$ssh bandit2@bandit.labs.overthewire.org -p 22207
+pass:rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+$cat spaces\ in\ this\ filename
+spaces\ in\ this\ filename -> aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+
+bandit 3 >4
+$ssh bandit3@bandit.labs.overthewire.org -p 22207
+>>>>>>> f01c3572a7c2886520e4f34e2c260c4f0c04f91b
 pass:aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 $ls
 $cd inhere
 $ls
 $ls -la
+<<<<<<< HEAD
 $file ...Hiding-From-You
 $cat ...Hiding-From-You
 .hidden -> 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
@@ -42,12 +65,22 @@ $cat ...Hiding-From-You
 bandit 4 >5
 $ssh bandit4@bandit.labs.overthewire.org -p 2220
 pass:2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+=======
+$file .hidden
+$cat .hidden
+.hidden -> 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+
+bandit 4 >5
+$ssh bandit4@bandit.labs.overthewire.org -p 22207
+pass:2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+>>>>>>> f01c3572a7c2886520e4f34e2c260c4f0c04f91b
 $ls
 $cd inhere
 $ls
 $ls -la
 try every file
 $cat < -file07
+<<<<<<< HEAD
 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 
 
@@ -55,6 +88,13 @@ bandit 5 >6
 $ssh bandit5@bandit.labs.overthewire.org -p 2220
 pass:4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 
+=======
+lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+
+bandit 5 >6
+$ssh bandit5@bandit.labs.overthewire.org -p 22207
+pass:lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+>>>>>>> f01c3572a7c2886520e4f34e2c260c4f0c04f91b
 $ls
 $cd inhere
 $ls
@@ -63,6 +103,7 @@ $find -size 1033c
   //find a file with size 1033 bytes, match the file description
 >./maybehere07/.file2
 $cat ./maybehere07/.file2
+<<<<<<< HEAD
 
 >HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 
@@ -83,10 +124,35 @@ $cat ./var/lib/dpkg/info/bandit7.password
 bandit 7 > 8
 $ssh bandit7@bandit.labs.overthewire.org -p 2220
 pass: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+=======
+>./maybehere07/.file2
+>P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+.file2 -> P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+
+bandit 6 >7
+$ssh bandit6@bandit.labs.overthewire.org -p 22207
+pass:P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+$ls -al
+$cd ..
+$cd ..
+$ find -group bandit6 -user bandit7 -size 33c
+//return all files that mathed owned by group bandit 6, user bandit7 size33c
+//returned some errors from files that cannot be acced
+>./var/lib/dpkg/info/bandit7.password
+//this file was the only one accesable
+$cat ./var/lib/dpkg/info/bandit7.password
+>z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+bandit7.password -> z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+
+bandit 7 > 8
+$ssh bandit7@bandit.labs.overthewire.org -p 2220
+pass: z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+>>>>>>> f01c3572a7c2886520e4f34e2c260c4f0c04f91b
 $ ls
 $ head data.txt
 $ grep million data.txt
 $grep millionth data.txt
+<<<<<<< HEAD
 >TdfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 
 
@@ -103,17 +169,42 @@ $ sort data.txt | uniq -u -c # unique string in a file
 bandit 9 > 10
 $ssh bandit9@bandit.labs.overthewire.org -p 2220
 pass: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+=======
+>TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+pass -> TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+
+bandit 8 > 9
+$ssh bandit8@bandit.labs.overthewire.org -p 2220
+pass: TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+$ls
+$ sort data.txt | uniq -u -c # unique string in a file
+>EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+pass -> EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+
+bandit 9 > 10
+$ssh bandit9@bandit.labs.overthewire.org -p 2220
+pass: EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+>>>>>>> f01c3572a7c2886520e4f34e2c260c4f0c04f91b
 $ls
 $cat data.txt
 $grep A data.txt
 $grep "==" data.txt
 $strings data.txt
+<<<<<<< HEAD
 > FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 
 
 bandit 10 > 11
 $ssh bandit10@bandit.labs.overthewire.org -p 2220
 pass:  FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+=======
+>G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+pass -> G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+
+bandit 10 > 11
+$ssh bandit10@bandit.labs.overthewire.org -p 2220
+pass: G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+>>>>>>> f01c3572a7c2886520e4f34e2c260c4f0c04f91b
 $ls
 $head data.txt
 $cat data.txt

